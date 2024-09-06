@@ -1,0 +1,8 @@
+#spring.application.name=demo
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+
+    websocket:
+      path: /graphql

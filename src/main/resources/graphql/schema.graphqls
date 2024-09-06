@@ -1,0 +1,24 @@
+#type Query {
+#  hello: String
+#}
+
+type Subscription {
+  stockPriceUpdates(symbol: String!): StockPrice!
+}
+
+type StockPrice {
+  symbol: String!
+  price: Float!
+}
+
+type Query {
+  dummy: String
+}
+type Mutation {
+  dummy: String
+}
+
+extend type Subscription {
+  hello: String
+}
+
